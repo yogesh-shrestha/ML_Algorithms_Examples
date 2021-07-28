@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="perimeter_worst <= 0.214\ngini = 0.468\nsamples = 512\nvalue = [321, 191]\nclass = benign", fillcolor="#f4ccaf"] ;
+1 [label="concave points_worst <= 0.696\ngini = 0.18\nsamples = 351\nvalue = [316, 35]\nclass = benign", fillcolor="#e88f4f"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="concave points_worst <= -0.055\ngini = 0.108\nsamples = 333\nvalue = [314, 19]\nclass = benign", fillcolor="#e78945"] ;
+1 -> 2 ;
+3 [label="gini = 0.028\nsamples = 278\nvalue = [274, 4]\nclass = benign", fillcolor="#e5833c"] ;
+2 -> 3 ;
+4 [label="gini = 0.397\nsamples = 55\nvalue = [40, 15]\nclass = benign", fillcolor="#efb083"] ;
+2 -> 4 ;
+5 [label="texture_worst <= -0.359\ngini = 0.198\nsamples = 18\nvalue = [2, 16]\nclass = malignant", fillcolor="#52a9e8"] ;
+1 -> 5 ;
+6 [label="gini = 0.444\nsamples = 3\nvalue = [2, 1]\nclass = benign", fillcolor="#f2c09c"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 15\nvalue = [0, 15]\nclass = malignant", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="concave points_mean <= 0.03\ngini = 0.06\nsamples = 161\nvalue = [5, 156]\nclass = malignant", fillcolor="#3fa0e6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="texture_worst <= 0.536\ngini = 0.473\nsamples = 13\nvalue = [5, 8]\nclass = malignant", fillcolor="#b5daf5"] ;
+8 -> 9 ;
+10 [label="gini = 0.408\nsamples = 7\nvalue = [5, 2]\nclass = benign", fillcolor="#efb388"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 6\nvalue = [0, 6]\nclass = malignant", fillcolor="#399de5"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 148\nvalue = [0, 148]\nclass = malignant", fillcolor="#399de5"] ;
+8 -> 12 ;
+}
