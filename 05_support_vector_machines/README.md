@@ -5,4 +5,4 @@ The idea behind the support vector machine is to find a hyperplane in an N-dimen
 
 
 
-First of all, we suppose that input data points belongs to one of two classes $y_i \in \{ -1, 1 \}$
+First of all, we suppose that input data points belongs to one of two classes $$y_i \in \{ -1, 1 \}$$
